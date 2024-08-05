@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "OnlineBook.Book.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/OnlineBook.Book.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBook.Book.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "OnlineBook.Book.Core/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBook.Book.Core/OnlineBook.Book.Core.csproj",
+      "msbuildProject": "../OnlineBook.Book.Core/OnlineBook.Book.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "OnlineBook.Book.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\OnlineBookstore\\OnlineBook.Book.Core\\OnlineBook.Book.Core.csproj": {
+              "projectPath": "D:\\OnlineBookstore\\OnlineBook.Book.Core\\OnlineBook.Book.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
