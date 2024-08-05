@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "Qy0rgxsoOTXj94cDolZoga8a/7LrH3f8kLWpWyGdGwygw+yu48osy4+1a6/WPUc8H6vZSI1N3f6SBv77fGlnEQ==",
+  "dgSpecHash": "OrKxk6mvOMmkhxdJ15GFdVplkjHL0WQTq5mXlW4oq0NagKmKnJ9CmiVUTYmq+3xI+m89VikIDuGtt8HtTR+2Ww==",
   "success": true,
   "projectFilePath": "D:\\OnlineBookstore\\OnlineBook.Book.DataAccess\\OnlineBook.Book.DataAccess.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.23\\microsoft.entityframeworkcore.6.0.23.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.23\\microsoft.entityframeworkcore.abstractions.6.0.23.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.23\\microsoft.entityframeworkcore.analyzers.6.0.23.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
