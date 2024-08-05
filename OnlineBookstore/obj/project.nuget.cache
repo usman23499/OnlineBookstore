@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "AgBG/+3GUi+03wWEBtnTnvY/QV5j9SBnT2Bk8PEGiql/SQeHR6tspu8I7twUvuguIOKqZFmkKLIk02OmGZoXXQ==",
+  "success": true,
+  "projectFilePath": "D:\\OnlineBookstore\\OnlineBookstore\\OnlineBookstore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
