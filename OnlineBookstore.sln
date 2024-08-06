@@ -3,23 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore", "OnlineBookstore\OnlineBookstore.csproj", "{6B571417-52DF-4411-B1FF-C9F055B9C670}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineBook.Book", "OnlineBook.Book", "{9850E838-7EDE-4587-B627-231EB5835704}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineBook.Common", "OnlineBook.Common", "{0884D817-9A9F-4601-A4E0-8DEE04A588A1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineBook.Notification", "OnlineBook.Notification", "{402D9894-6969-4EF1-82CF-329C4911885B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineBook.Report", "OnlineBook.Report", "{D8F4FF8D-275D-4459-A793-105792C227F2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBook.Book.Application", "OnlineBook.Book.Application\OnlineBook.Book.Application.csproj", "{06716DF5-3333-4CC2-85AE-5505831A92EB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBook.Book.Core", "OnlineBook.Book.Core\OnlineBook.Book.Core.csproj", "{1D7093E9-B6BA-412A-B5DD-26BBB39D254E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBook.Book.DataAccess", "OnlineBook.Book.DataAccess\OnlineBook.Book.DataAccess.csproj", "{FBC36A1C-E27F-4D13-AEF6-012F3EABBF62}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBook.Book.DbMigration", "OnlineBook.Book.DbMigration\OnlineBook.Book.DbMigration.csproj", "{DC14BF8A-C358-46E5-8FDC-646E59926C69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookstore", "OnlineBookstore\OnlineBookstore.csproj", "{6B571417-52DF-4411-B1FF-C9F055B9C670}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,31 +15,9 @@ Global
 		{6B571417-52DF-4411-B1FF-C9F055B9C670}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B571417-52DF-4411-B1FF-C9F055B9C670}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B571417-52DF-4411-B1FF-C9F055B9C670}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06716DF5-3333-4CC2-85AE-5505831A92EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06716DF5-3333-4CC2-85AE-5505831A92EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06716DF5-3333-4CC2-85AE-5505831A92EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06716DF5-3333-4CC2-85AE-5505831A92EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D7093E9-B6BA-412A-B5DD-26BBB39D254E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D7093E9-B6BA-412A-B5DD-26BBB39D254E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D7093E9-B6BA-412A-B5DD-26BBB39D254E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D7093E9-B6BA-412A-B5DD-26BBB39D254E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FBC36A1C-E27F-4D13-AEF6-012F3EABBF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FBC36A1C-E27F-4D13-AEF6-012F3EABBF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FBC36A1C-E27F-4D13-AEF6-012F3EABBF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FBC36A1C-E27F-4D13-AEF6-012F3EABBF62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC14BF8A-C358-46E5-8FDC-646E59926C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC14BF8A-C358-46E5-8FDC-646E59926C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC14BF8A-C358-46E5-8FDC-646E59926C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC14BF8A-C358-46E5-8FDC-646E59926C69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{06716DF5-3333-4CC2-85AE-5505831A92EB} = {9850E838-7EDE-4587-B627-231EB5835704}
-		{1D7093E9-B6BA-412A-B5DD-26BBB39D254E} = {9850E838-7EDE-4587-B627-231EB5835704}
-		{FBC36A1C-E27F-4D13-AEF6-012F3EABBF62} = {9850E838-7EDE-4587-B627-231EB5835704}
-		{DC14BF8A-C358-46E5-8FDC-646E59926C69} = {9850E838-7EDE-4587-B627-231EB5835704}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9A09123-556D-4981-847D-1D9194033771}

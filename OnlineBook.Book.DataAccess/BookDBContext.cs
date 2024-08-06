@@ -12,7 +12,6 @@ namespace OnlineBook.Book.DataAccess
     {
         public BookDBContext(DbContextOptions<BookDBContext> options) : base(options)
         {
-
         }
 
         public DbSet<BookDAO> Books { get; set; }
