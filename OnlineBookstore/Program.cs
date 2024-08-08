@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineBook.Book.DataAccess;
+using OnlineBookstore.Application;
+using OnlineBookstore.Core;
+using OnlineBookstore.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +19,11 @@ builder.Services.AddDbContext<BookDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineBook"));
     // this connection in appsetting.json
 });
+
+builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+
+builder.Services.AddTransient<IBookService, BookService>();
 
 
 var app = builder.Build();
