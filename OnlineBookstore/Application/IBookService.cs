@@ -6,5 +6,6 @@ namespace OnlineBookstore.Application
     {
         Task<Order> GetOrderById(Guid id);
         Task<List<Order>> GetOrdersAll();
+        Task<Book> AddBook(Guid id);
     }
 }

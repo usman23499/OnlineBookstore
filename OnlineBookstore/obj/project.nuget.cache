@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Hnt6zr9oLzbITlJWp2qfZ4gEzVZnhIvBWKgSfgAY+uRJPTyCa4D99+7AGFUagWwxMobESGP30Gv6/P/oWPsuPQ==",
+  "dgSpecHash": "bodCz9EkS+H95ftar84RPfum3RN/9gUwtSZz3TrsimWlKv/KgIVJgxVifnp5E2eMMJ/BroI25g8oEhmIJCpxuQ==",
   "success": true,
   "projectFilePath": "D:\\OnlineBookstore\\OnlineBookstore\\OnlineBookstore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.32\\microsoft.entityframeworkcore.6.0.32.nupkg.sha512",

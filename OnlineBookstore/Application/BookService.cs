@@ -11,6 +11,12 @@ namespace OnlineBookstore.Application
             _bookRepository = bookRepository;
             _orderRepository = orderRepository;
         }
+
+        public Task<Book> AddBook(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<Order> GetOrderById(Guid id)
         {
             return await _orderRepository.GetById(id);
