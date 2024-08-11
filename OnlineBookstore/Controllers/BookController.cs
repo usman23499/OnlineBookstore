@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using OnlineBookstore.Application;
+using OnlineBookstore.Application.Dto;
 using OnlineBookstore.Core;
 
 namespace OnlineBookstore.Controllers
@@ -26,7 +27,22 @@ namespace OnlineBookstore.Controllers
             logger.LogInformation("Get All books");
             return Ok(orders);
         }
-        
+
+        [HttpPost]
+        public async Task<IActionResult> AddBook(AddBookDto Dto)
+        {
+            Book book = await bookService.AddBook(Dto);
+            return Ok(book);
+        }
+
+        [HttpPost]
+        [Route("Order")]
+        public async Task<IActionResult> AddOrder(AddBookDto Dto)
+        {
+            Book book = await bookService.AddBook(Dto);
+            return Ok(book);
+        }
+
         [HttpGet]
         [Route("{id:guid}")]
         public async Task<IActionResult> GetOrderById(Guid id)

@@ -13,6 +13,7 @@ namespace OnlineBookstore.DataAccess.DAO
         public Guid Id { get; set; }
         public DateTime OrderDate { get; set; }
         public int Quantity { get; set; }
+        public Guid BookId { get; set; }
         public virtual BookDAO Book { get; set; }
     }
 }

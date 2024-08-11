@@ -12,16 +12,28 @@ namespace OnlineBookstore.DataAccess
         {
                 context = bookDBContext;
         }        
-        public Task<Order> Add(Order order)
+        public async Task<Order> Add(Order order)
         {
-            throw new NotImplementedException();
+            OrderDAO orderDAO = new OrderDAO()
+            {
+                Id = order.Id,
+                BookId = order.BookId,
+                Quantity = order.Quantity,
+                OrderDate = order.OrderDate,
+
+            };
+
+            await context.Orders.AddAsync(orderDAO);
+            await context.SaveChangesAsync();
+
+            return order;
         }
 
         public async Task<List<Order>> GetAll()
         {
             List<OrderDAO> order = await context.Orders.ToListAsync();
             List<Order> orders = order
-                .Select(orderDAO => Order.Create(orderDAO.Id, orderDAO.OrderDate, orderDAO.Quantity))
+                .Select(orderDAO => Order.Create(orderDAO.Id, orderDAO.OrderDate, orderDAO.Quantity, orderDAO.BookId))
                 .ToList();
 
             return orders;
@@ -31,7 +43,7 @@ namespace OnlineBookstore.DataAccess
         {
             OrderDAO order = await context.Orders.FindAsync(id);
 
-            return Order.Create(order.Id, order.OrderDate, order.Quantity);
+            return Order.Create(order.Id, order.OrderDate, order.Quantity, order.BookId);
         }
 
         public Task<Order> Update(Order order)

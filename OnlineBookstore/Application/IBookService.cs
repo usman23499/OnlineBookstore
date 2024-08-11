@@ -1,4 +1,5 @@
-﻿using OnlineBookstore.Core;
+﻿using OnlineBookstore.Application.Dto;
+using OnlineBookstore.Core;
 
 namespace OnlineBookstore.Application
 {
@@ -6,6 +7,7 @@ namespace OnlineBookstore.Application
     {
         Task<Order> GetOrderById(Guid id);
         Task<List<Order>> GetOrdersAll();
-        Task<Book> AddBook(Guid id);
+        Task<Book> AddBook(AddBookDto dto);
+        Task<Order> CreateOrder(CreateOrderDto dto);
     }
 }

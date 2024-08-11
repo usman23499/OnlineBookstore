@@ -1,5 +1,6 @@
 ﻿using OnlineBook.Book.DataAccess;
 using OnlineBookstore.Core;
+using OnlineBookstore.DataAccess.DAO;
 
 namespace OnlineBookstore.DataAccess
 {
@@ -10,9 +11,25 @@ namespace OnlineBookstore.DataAccess
         {
             _context = context;
         }
-        public Task<Book> Add(Book book)
+        public async Task<Book> Add(Book book)
         {
-            throw new NotImplementedException();
+            BookDAO bookDAO = new BookDAO()
+            { 
+                Id = book.Id,
+                Author = book.Author,
+                Discription = book.Discription,
+                Title = book.Title,
+                Price = new PriceDAO()
+                {
+                    Amount   = book.Price.Amount,
+                    Currency = book.Price.Currency
+                }
+            }; 
+
+           await _context.Books.AddAsync(bookDAO);
+           await _context.SaveChangesAsync();
+
+            return book;
         }
 
         public Task<List<Book>> GetAll()

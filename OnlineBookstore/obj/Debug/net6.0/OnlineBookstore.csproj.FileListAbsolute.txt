@@ -61,3 +61,5 @@ D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\refint\OnlineBookstore.dll
 D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.pdb
 D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.genruntimeconfig.cache
 D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\ref\OnlineBookstore.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\AutoMapper.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

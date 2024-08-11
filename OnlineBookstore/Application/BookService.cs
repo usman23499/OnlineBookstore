@@ -1,4 +1,5 @@
-﻿using OnlineBookstore.Core;
+﻿using OnlineBookstore.Application.Dto;
+using OnlineBookstore.Core;
 
 namespace OnlineBookstore.Application
 {
@@ -12,9 +13,13 @@ namespace OnlineBookstore.Application
             _orderRepository = orderRepository;
         }
 
-        public Task<Book> AddBook(Guid id)
+        public async Task<Book> AddBook(AddBookDto dto)
         {
-            throw new NotImplementedException();
+            Book book = Book.Create(dto.Title, dto.Author, dto.Discription);
+            Price price = Price.Create(dto.Amount, dto.Currency);
+            book.SetPrice(price);
+            Book bookReturn = await _bookRepository.Add(book);
+            return bookReturn;
         }
 
         public async Task<Order> GetOrderById(Guid id)
@@ -25,6 +30,15 @@ namespace OnlineBookstore.Application
         public async Task<List<Order>> GetOrdersAll()
         {
             return await _orderRepository.GetAll();
+        }
+
+        public async Task<Order> CreateOrder(CreateOrderDto dto)
+        {
+            Book book = Book.Create(dto.Title, dto.Author, dto.Discription);
+            Price price = Price.Create(dto.Amount, dto.Currency);
+            book.SetPrice(price);
+            Book bookReturn = await _bookRepository.Add(book);
+            return bookReturn;
         }
     }
 }
