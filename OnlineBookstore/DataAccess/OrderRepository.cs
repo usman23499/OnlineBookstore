@@ -20,7 +20,6 @@ namespace OnlineBookstore.DataAccess
                 BookId = order.BookId,
                 Quantity = order.Quantity,
                 OrderDate = order.OrderDate,
-
             };
 
             await context.Orders.AddAsync(orderDAO);

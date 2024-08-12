@@ -37,9 +37,12 @@ namespace OnlineBookstore.DataAccess
             throw new NotImplementedException();
         }
 
-        public Task<Book> GetById(int id)
+        public async Task<Book> GetById(Guid id)
         {
-            throw new NotImplementedException();
+            BookDAO book = await _context.Books.FindAsync(id);
+            if (book == null)
+                throw new Exception("Invalid ID");
+            return Book.Create(book.Id, book.Title, book.Author, book.Discription);
         }
 
         public Task<Book> Update(Book book)

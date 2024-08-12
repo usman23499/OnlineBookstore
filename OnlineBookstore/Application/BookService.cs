@@ -34,11 +34,11 @@ namespace OnlineBookstore.Application
 
         public async Task<Order> CreateOrder(CreateOrderDto dto)
         {
-            Book book = Book.Create(dto.Title, dto.Author, dto.Discription);
-            Price price = Price.Create(dto.Amount, dto.Currency);
-            book.SetPrice(price);
-            Book bookReturn = await _bookRepository.Add(book);
-            return bookReturn;
+            Book book = await _bookRepository.GetById(dto.BookId);
+            Order order = Order.Create(dto.Quantity, book.Id);
+            Order orderReturn = await _orderRepository.Add(order);
+
+            return orderReturn;
         }
     }
 }

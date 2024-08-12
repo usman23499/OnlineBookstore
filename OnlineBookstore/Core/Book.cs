@@ -35,6 +35,12 @@ namespace OnlineBookstore.Core
             return new Book(title,author,discription);
         }
 
+        public static Book Create(Guid id,string title, string author, string? discription)
+        {
+            //validate(price.Amount);
+            return new Book(id,title, author, discription);
+        }
+
         public void AddOrder(Order order)
         {
             Orders.Add(order);

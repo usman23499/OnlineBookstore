@@ -37,10 +37,10 @@ namespace OnlineBookstore.Controllers
 
         [HttpPost]
         [Route("Order")]
-        public async Task<IActionResult> AddOrder(AddBookDto Dto)
+        public async Task<IActionResult> AddOrder(CreateOrderDto Dto)
         {
-            Book book = await bookService.AddBook(Dto);
-            return Ok(book);
+            Order order = await bookService.CreateOrder(Dto);
+            return Ok(order);
         }
 
         [HttpGet]
