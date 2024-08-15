@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using OnlineBook.Book.DataAccess;
 using OnlineBookstore.Core;
 using OnlineBookstore.DataAccess.DAO;
@@ -8,19 +9,16 @@ namespace OnlineBookstore.DataAccess
     public class OrderRepository : IOrderRepository
     {
         private readonly BookDBContext context;
-        public OrderRepository(BookDBContext bookDBContext)
+        private readonly IMapper _mapper;
+
+        public OrderRepository(BookDBContext bookDBContext, IMapper mapper)
         {
-                context = bookDBContext;
+             context = bookDBContext;
+            _mapper = mapper;
         }        
         public async Task<Order> Add(Order order)
         {
-            OrderDAO orderDAO = new OrderDAO()
-            {
-                Id = order.Id,
-                BookId = order.BookId,
-                Quantity = order.Quantity,
-                OrderDate = order.OrderDate,
-            };
+            OrderDAO orderDAO = _mapper.Map<OrderDAO>(order);   
 
             await context.Orders.AddAsync(orderDAO);
             await context.SaveChangesAsync();

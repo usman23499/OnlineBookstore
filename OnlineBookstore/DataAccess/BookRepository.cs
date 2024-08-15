@@ -1,4 +1,5 @@
-﻿using OnlineBook.Book.DataAccess;
+﻿using AutoMapper;
+using OnlineBook.Book.DataAccess;
 using OnlineBookstore.Core;
 using OnlineBookstore.DataAccess.DAO;
 
@@ -6,29 +7,21 @@ namespace OnlineBookstore.DataAccess
 {
     public class BookRepository : IBookRepository
     {
-        private readonly BookDBContext _context;   
-        public BookRepository(BookDBContext context)
+        private readonly BookDBContext _context;
+        private readonly IMapper _mapper;
+        public BookRepository(BookDBContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         public async Task<Book> Add(Book book)
         {
-            BookDAO bookDAO = new BookDAO()
-            { 
-                Id = book.Id,
-                Author = book.Author,
-                Discription = book.Discription,
-                Title = book.Title,
-                Price = new PriceDAO()
-                {
-                    Amount   = book.Price.Amount,
-                    Currency = book.Price.Currency
-                }
-            }; 
-
-           await _context.Books.AddAsync(bookDAO);
-           await _context.SaveChangesAsync();
-
+            BookDAO bookDAO  = _mapper.Map<BookDAO>(book);
+            bookDAO.Price = _mapper.Map<PriceDAO>(book.Price);
+         
+            await _context.Books.AddAsync(bookDAO);
+            await _context.SaveChangesAsync();
+            
             return book;
         }
 
