@@ -3,7 +3,7 @@ using OnlineBook.Book.DataAccess;
 using OnlineBookstore.Core;
 using OnlineBookstore.DataAccess.DAO;
 
-namespace OnlineBookstore.DataAccess
+namespace OnlineBookstore.DataAccess.Book
 {
     public class BookRepository : IBookRepository
     {
@@ -14,31 +14,31 @@ namespace OnlineBookstore.DataAccess
             _context = context;
             _mapper = mapper;
         }
-        public async Task<Book> Add(Book book)
+        public async Task<Core.Book> Add(Core.Book book)
         {
-            BookDAO bookDAO  = _mapper.Map<BookDAO>(book);
+            BookDAO bookDAO = _mapper.Map<BookDAO>(book);
             bookDAO.Price = _mapper.Map<PriceDAO>(book.Price);
-         
+
             await _context.Books.AddAsync(bookDAO);
             await _context.SaveChangesAsync();
-            
+
             return book;
         }
 
-        public Task<List<Book>> GetAll()
+        public Task<List<Core.Book>> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public async Task<Book> GetById(Guid id)
+        public async Task<Core.Book> GetById(Guid id)
         {
             BookDAO book = await _context.Books.FindAsync(id);
             if (book == null)
                 throw new Exception("Invalid ID");
-            return Book.Create(book.Id, book.Title, book.Author, book.Discription);
+            return Core.Book.Create(book.Id, book.Title, book.Author, book.Discription);
         }
 
-        public Task<Book> Update(Book book)
+        public Task<Core.Book> Update(Core.Book book)
         {
             throw new NotImplementedException();
         }

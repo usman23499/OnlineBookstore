@@ -3,8 +3,10 @@
     public interface IUserRepository
     {
         Task<UserRM> Login(string username, string password);
-        Task Register(User user);
-        Task<RoleRM> AddRole(UserRole role);
-
+        Task<User> Register(User user);
+        Task<RoleRM> AddRole(Role role);
+        Task<UserRole> AssignRole(UserRole role);
+        Task<Role> GetRoleByName(string roleName);
+        Task<User> GetUserByEmail(string email);
     }
 }

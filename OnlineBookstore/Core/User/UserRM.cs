@@ -2,8 +2,9 @@
 {
     public class UserRM
     {
-        public string Name { get; private set; }
-        public string Email { get; private set; }
-        public string Token { get; private set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Token { get;  set; }
+        public List<string> Roles { get; set; }
     }
 }

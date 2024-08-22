@@ -4,7 +4,7 @@ using OnlineBook.Book.DataAccess;
 using OnlineBookstore.Core;
 using OnlineBookstore.DataAccess.DAO;
 
-namespace OnlineBookstore.DataAccess
+namespace OnlineBookstore.DataAccess.Book
 {
     public class OrderRepository : IOrderRepository
     {
@@ -13,12 +13,12 @@ namespace OnlineBookstore.DataAccess
 
         public OrderRepository(BookDBContext bookDBContext, IMapper mapper)
         {
-             context = bookDBContext;
+            context = bookDBContext;
             _mapper = mapper;
-        }        
+        }
         public async Task<Order> Add(Order order)
         {
-            OrderDAO orderDAO = _mapper.Map<OrderDAO>(order);   
+            OrderDAO orderDAO = _mapper.Map<OrderDAO>(order);
 
             await context.Orders.AddAsync(orderDAO);
             await context.SaveChangesAsync();

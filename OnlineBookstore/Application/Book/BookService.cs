@@ -1,4 +1,5 @@
-﻿using OnlineBookstore.Application.Dto;
+﻿using OnlineBookstore.Application.Book;
+using OnlineBookstore.Application.Dto;
 using OnlineBookstore.Core;
 
 namespace OnlineBookstore.Application
@@ -13,12 +14,12 @@ namespace OnlineBookstore.Application
             _orderRepository = orderRepository;
         }
 
-        public async Task<Book> AddBook(AddBookDto dto)
+        public async Task<Core.Book> AddBook(AddBookDto dto)
         {
-            Book book = Book.Create(dto.Title, dto.Author, dto.Discription);
+            Core.Book book = Core.Book.Create(dto.Title, dto.Author, dto.Discription);
             Price price = Price.Create(dto.Amount, dto.Currency);
             book.SetPrice(price);
-            Book bookReturn = await _bookRepository.Add(book);
+            Core.Book bookReturn = await _bookRepository.Add(book);
             return bookReturn;
         }
 
@@ -34,7 +35,7 @@ namespace OnlineBookstore.Application
 
         public async Task<Order> CreateOrder(CreateOrderDto dto)
         {
-            Book book = await _bookRepository.GetById(dto.BookId);
+            Core.Book book = await _bookRepository.GetById(dto.BookId);
             Order order = Order.Create(dto.Quantity, book.Id);
             Order orderReturn = await _orderRepository.Add(order);
 

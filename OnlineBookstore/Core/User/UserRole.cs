@@ -29,5 +29,10 @@
             UserRole userRole = new (userId, roleId);
             return userRole;
         }
+
+        public static implicit operator UserRole(Role v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

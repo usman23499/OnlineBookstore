@@ -6,26 +6,24 @@
         public string Name { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
-        public string Token { get; private set; }
         public List<UserRole> _UserRoles { get; private set; }
-        private User(Guid id, string name, string email, string password, string token)
+        private User(Guid id, string name, string email, string password)
         {
             Id = id;
             Name = name;
             Email = email;
             Password = password;
-            Token = token;
             _UserRoles = new List<UserRole>();
         }
 
-        public static User Create(Guid id, string name, string email, string password, string token)
+        public static User Create(Guid id, string name, string email, string password)
         {
-            User user = new (id, name, email, password, token);
+            User user = new (id, name, email, password);
             return user;
         }
-        public static User Create(string name, string email, string password, string token)
+        public static User Create(string name, string email, string password)
         {
-            User user = new(Guid.NewGuid(), name, email, password, token);
+            User user = new(Guid.NewGuid(), name, email, password);
             return user;
         }
 

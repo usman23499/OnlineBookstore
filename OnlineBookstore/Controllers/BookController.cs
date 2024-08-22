@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using OnlineBookstore.Application;
+using OnlineBookstore.Application.Book;
 using OnlineBookstore.Application.Dto;
 using OnlineBookstore.Core;
 
@@ -9,6 +10,7 @@ namespace OnlineBookstore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class BookController : ControllerBase
     {
         private readonly IBookService bookService;

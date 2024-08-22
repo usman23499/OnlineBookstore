@@ -63,3 +63,15 @@ D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.genruntimeco
 D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\ref\OnlineBookstore.dll
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\AutoMapper.dll
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.AspNetCore.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Sinks.File.dll
