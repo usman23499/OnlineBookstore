@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineBookstore.User.Core\OnlineBookstore.User.Core.csproj" />
+    <ProjectReference Include="..\OnlineBookstore\OnlineBookstore.csproj" />
+  </ItemGroup>
+
 </Project>

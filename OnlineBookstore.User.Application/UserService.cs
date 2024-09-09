@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OnlineBookstore.Application.User.Dto;
+using OnlineBookstore.Core.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,31 +41,33 @@ namespace OnlineBookstore.User.Application
             return userRm;
         }
 
-        public async Task<Core.User.User> Register(UserDTO user)
+        public async Task<Core.User> Register(UserDTO user)
         {
-            Core.User.User newUser = Core.User.User.Create(
-                user.Name,
-                user.Email,
-                user.Password
-                );
+            //Core.User newUser = Core.User.Create(
+            //    user.Name,
+            //    user.Email,
+            //    user.Password
+            //    );
 
-            Core.User.User CheckUser = await _userRepository.GetUserByEmail(user.Email);
+            //Core.User CheckUser = await _userRepository.GetUserByEmail(user.Email);
 
-            if (CheckUser != null)
-                throw new ArgumentNullException("User Already Exsist");
-            if (user.UserRoleName == null)
-                throw new ArgumentNullException("Invalid Role");
+            //if (CheckUser != null)
+            //    throw new ArgumentNullException("User Already Exsist");
+            //if (user.UserRoleName == null)
+            //    throw new ArgumentNullException("Invalid Role");
 
-            foreach (string roleName in user.UserRoleName)
-            {
-                Role CheckRole = await _userRepository.GetRoleByName(roleName);
-                if (CheckRole == null)
-                    throw new ArgumentNullException("Invalid Role");
-                newUser.AddUserRole(CheckRole.Id);
-            }
+            //foreach (string roleName in user.UserRoleName)
+            //{
+            //    Role CheckRole = await _userRepository.GetRoleByName(roleName);
+            //    if (CheckRole == null)
+            //        throw new ArgumentNullException("Invalid Role");
+            //    newUser.AddUserRole(CheckRole.Id);
+            //}
 
-            await _userRepository.Register(newUser);
-            return newUser;
+            //await _userRepository.Register(newUser);
+            //return newUser;
+
+            return null;
         }
     }
 }

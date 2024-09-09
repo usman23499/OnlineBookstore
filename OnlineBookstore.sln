@@ -5,9 +5,33 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookstore", "OnlineBookstore\OnlineBookstore.csproj", "{6B571417-52DF-4411-B1FF-C9F055B9C670}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Book.Common", "Book.Common", "{6C3F4F6D-5C56-4517-ACE2-A9CCA7A8A3F8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineBookstore.Common", "OnlineBookstore.Common", "{6C3F4F6D-5C56-4517-ACE2-A9CCA7A8A3F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.Common.Core", "Book.Common.Core\Book.Common.Core.csproj", "{648AA125-6F29-4B49-AB33-9660E15B4892}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookstore.Common.Core", "Book.Common.Core\OnlineBookstore.Common.Core.csproj", "{648AA125-6F29-4B49-AB33-9660E15B4892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.Common.Application", "OnlineBookstore.Common.Application\OnlineBookstore.Common.Application.csproj", "{AA61B411-C525-48E7-A5EA-0BF151844A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.Common.DataAccess", "OnlineBookstore.Common.DataAccess\OnlineBookstore.Common.DataAccess.csproj", "{A9B21C9A-2845-469D-8763-240F9B22A6C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineBookstore.User", "OnlineBookstore.User", "{4EBED77A-A3AC-42FF-9DBA-D797DB602B1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineBookstore.Book", "OnlineBookstore.Book", "{CA9F44D8-517A-4406-B2EA-5538F7FE7B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.Book.Core", "OnlineBookstore.Book.Core\OnlineBookstore.Book.Core.csproj", "{C3B156B9-2C52-4C20-9AEE-7D08283BA94F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.Book.DataAccess", "OnlineBookstore.Book.DataAccess\OnlineBookstore.Book.DataAccess.csproj", "{F745A564-3288-4E23-B9CE-0263881630C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.Book.Application", "OnlineBookstore.Book.Application\OnlineBookstore.Book.Application.csproj", "{1047D80B-6A4A-46CF-8579-27109BB658ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookStore.Book.DbMigration", "OnlineBookStore.Book.DbMigration\OnlineBookStore.Book.DbMigration.csproj", "{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.User.Application", "OnlineBookstore.User.Application\OnlineBookstore.User.Application.csproj", "{4A7AACAA-4B71-4DEF-B4DD-B95471286730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.User.Core", "OnlineBookstore.User.Core\OnlineBookstore.User.Core.csproj", "{15D2B640-8EEE-4DBD-A7E5-9B5B30B10A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.User.DataAccess", "OnlineBookstore.User.DataAccess\OnlineBookstore.User.DataAccess.csproj", "{19A3EEEF-1595-4D64-88E1-BCB17F2ADDBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.User.DbMigration", "OnlineBookstore.User.DbMigration\OnlineBookstore.User.DbMigration.csproj", "{338BF822-6BD9-4ED0-A15D-B8A7E8BE3B63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +47,62 @@ Global
 		{648AA125-6F29-4B49-AB33-9660E15B4892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{648AA125-6F29-4B49-AB33-9660E15B4892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{648AA125-6F29-4B49-AB33-9660E15B4892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA61B411-C525-48E7-A5EA-0BF151844A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA61B411-C525-48E7-A5EA-0BF151844A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA61B411-C525-48E7-A5EA-0BF151844A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA61B411-C525-48E7-A5EA-0BF151844A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9B21C9A-2845-469D-8763-240F9B22A6C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9B21C9A-2845-469D-8763-240F9B22A6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9B21C9A-2845-469D-8763-240F9B22A6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9B21C9A-2845-469D-8763-240F9B22A6C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B156B9-2C52-4C20-9AEE-7D08283BA94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B156B9-2C52-4C20-9AEE-7D08283BA94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B156B9-2C52-4C20-9AEE-7D08283BA94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B156B9-2C52-4C20-9AEE-7D08283BA94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F745A564-3288-4E23-B9CE-0263881630C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F745A564-3288-4E23-B9CE-0263881630C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F745A564-3288-4E23-B9CE-0263881630C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F745A564-3288-4E23-B9CE-0263881630C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1047D80B-6A4A-46CF-8579-27109BB658ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1047D80B-6A4A-46CF-8579-27109BB658ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1047D80B-6A4A-46CF-8579-27109BB658ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1047D80B-6A4A-46CF-8579-27109BB658ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A7AACAA-4B71-4DEF-B4DD-B95471286730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7AACAA-4B71-4DEF-B4DD-B95471286730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A7AACAA-4B71-4DEF-B4DD-B95471286730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A7AACAA-4B71-4DEF-B4DD-B95471286730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15D2B640-8EEE-4DBD-A7E5-9B5B30B10A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D2B640-8EEE-4DBD-A7E5-9B5B30B10A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D2B640-8EEE-4DBD-A7E5-9B5B30B10A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D2B640-8EEE-4DBD-A7E5-9B5B30B10A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A3EEEF-1595-4D64-88E1-BCB17F2ADDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A3EEEF-1595-4D64-88E1-BCB17F2ADDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A3EEEF-1595-4D64-88E1-BCB17F2ADDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A3EEEF-1595-4D64-88E1-BCB17F2ADDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{338BF822-6BD9-4ED0-A15D-B8A7E8BE3B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{338BF822-6BD9-4ED0-A15D-B8A7E8BE3B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{338BF822-6BD9-4ED0-A15D-B8A7E8BE3B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{338BF822-6BD9-4ED0-A15D-B8A7E8BE3B63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{648AA125-6F29-4B49-AB33-9660E15B4892} = {6C3F4F6D-5C56-4517-ACE2-A9CCA7A8A3F8}
+		{AA61B411-C525-48E7-A5EA-0BF151844A7E} = {6C3F4F6D-5C56-4517-ACE2-A9CCA7A8A3F8}
+		{A9B21C9A-2845-469D-8763-240F9B22A6C9} = {6C3F4F6D-5C56-4517-ACE2-A9CCA7A8A3F8}
+		{C3B156B9-2C52-4C20-9AEE-7D08283BA94F} = {CA9F44D8-517A-4406-B2EA-5538F7FE7B84}
+		{F745A564-3288-4E23-B9CE-0263881630C8} = {CA9F44D8-517A-4406-B2EA-5538F7FE7B84}
+		{1047D80B-6A4A-46CF-8579-27109BB658ED} = {CA9F44D8-517A-4406-B2EA-5538F7FE7B84}
+		{8FCCEFB9-A216-4390-A94A-99D4417ED8AB} = {CA9F44D8-517A-4406-B2EA-5538F7FE7B84}
+		{4A7AACAA-4B71-4DEF-B4DD-B95471286730} = {4EBED77A-A3AC-42FF-9DBA-D797DB602B1B}
+		{15D2B640-8EEE-4DBD-A7E5-9B5B30B10A3C} = {4EBED77A-A3AC-42FF-9DBA-D797DB602B1B}
+		{19A3EEEF-1595-4D64-88E1-BCB17F2ADDBD} = {4EBED77A-A3AC-42FF-9DBA-D797DB602B1B}
+		{338BF822-6BD9-4ED0-A15D-B8A7E8BE3B63} = {4EBED77A-A3AC-42FF-9DBA-D797DB602B1B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9A09123-556D-4981-847D-1D9194033771}
