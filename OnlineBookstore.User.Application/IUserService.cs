@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineBookstore.User.Application.User
+namespace OnlineBookstore.User.Application
 {
     public interface IUserService
     {
