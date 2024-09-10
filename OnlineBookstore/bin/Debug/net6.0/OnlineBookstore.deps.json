@@ -12,7 +12,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.33",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
-          "Microsoft.EntityFrameworkCore.Tools": "6.0.32",
+          "Microsoft.EntityFrameworkCore.Tools": "6.0.33",
           "OnlineBookstore.Book.Application": "1.0.0",
           "OnlineBookstore.Book.DataAccess": "1.0.0",
           "Serilog.AspNetCore": "6.1.0",
@@ -149,15 +149,15 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.33": {},
-      "Microsoft.EntityFrameworkCore.Design/6.0.32": {
+      "Microsoft.EntityFrameworkCore.Design/6.0.33": {
         "dependencies": {
           "Humanizer.Core": "2.8.26",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.33"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "6.0.32.0",
-            "fileVersion": "6.0.3224.26906"
+            "assemblyVersion": "6.0.33.0",
+            "fileVersion": "6.0.3324.36105"
           }
         }
       },
@@ -185,9 +185,9 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.32": {
+      "Microsoft.EntityFrameworkCore.Tools/6.0.33": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.32"
+          "Microsoft.EntityFrameworkCore.Design": "6.0.33"
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
@@ -817,12 +817,12 @@
       "path": "microsoft.entityframeworkcore.analyzers/6.0.33",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.33.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/6.0.32": {
+    "Microsoft.EntityFrameworkCore.Design/6.0.33": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rzccUMersJKA/+fqoG6bJrMLW77uJYENddYl+0DlfgPl48y+6XAMWhlfcoPPkaDMTqEKCS5QxNbijDagruNQmQ==",
-      "path": "microsoft.entityframeworkcore.design/6.0.32",
-      "hashPath": "microsoft.entityframeworkcore.design.6.0.32.nupkg.sha512"
+      "sha512": "sha512-il6DvyJ++C6GLAfQAaDK2FAy2DTKoAzBN1a9pSm0Lps7U2rcjFJCyPNGxwQgN2S7dAspOqnwRgpSAzRLFbHTOw==",
+      "path": "microsoft.entityframeworkcore.design/6.0.33",
+      "hashPath": "microsoft.entityframeworkcore.design.6.0.33.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.33": {
       "type": "package",
@@ -838,12 +838,12 @@
       "path": "microsoft.entityframeworkcore.sqlserver/6.0.33",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.6.0.33.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.32": {
+    "Microsoft.EntityFrameworkCore.Tools/6.0.33": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sXOfcLzaZI1gBC6AVDz+XUUt+Hoh42spdESHMXlq7Zo9sZcffkma16aKomBop5ZI+18g1ghQ1Mufqjj4iiMIuA==",
-      "path": "microsoft.entityframeworkcore.tools/6.0.32",
-      "hashPath": "microsoft.entityframeworkcore.tools.6.0.32.nupkg.sha512"
+      "sha512": "sha512-qF15mub7CfSoHiFg4mW0vR4Js2hSWBYUKZrEVkpy26GBpKT+M83v4fr1rDV5uopofa27JaEd65VscxkNMuaQqQ==",
+      "path": "microsoft.entityframeworkcore.tools/6.0.33",
+      "hashPath": "microsoft.entityframeworkcore.tools.6.0.33.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",

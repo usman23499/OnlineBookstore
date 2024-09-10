@@ -1,13 +1,9 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
 using OnlineBook.Book.DataAccess;
 using OnlineBookstore.Book.Application;
 using OnlineBookstore.Book.Core;
 using OnlineBookstore.Book.DataAccess;
-using Serilog;
-using System.Text;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -70,7 +66,13 @@ builder.Services.AddTransient<IBookService, BookService>();
 
 
 // inject mapper
-//builder.Services.AddAutoMapper(typeof(Program).Assembly);
+builder.Services.AddAutoMapper(config =>
+{
+    config.AddMaps(new[]
+    {
+    "OnlineBookstore.Book.DataAccess"
+    });
+},typeof(Program).Assembly);
 
 //builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 //    .AddJwtBearer(options =>

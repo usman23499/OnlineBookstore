@@ -80,3 +80,4 @@ D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.DataAcc
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.Application.pdb
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.DataAccess.pdb
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.Core.pdb
+D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.MvcApplicationPartsAssemblyInfo.cs

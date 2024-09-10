@@ -1,10 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using OnlineBookstore.Application.Book;
-using OnlineBookstore.Application.Dto;
-using OnlineBookstore.Core;
+﻿using Microsoft.AspNetCore.Mvc;
+using OnlineBookstore.Book.Application;
+using OnlineBookstore.Book.Application.Dto;
+using OnlineBookstore.Book.Core;
 
 namespace OnlineBookstore.Controllers
 {
@@ -22,18 +19,18 @@ namespace OnlineBookstore.Controllers
             this.logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet("Orders")]
         public async Task<IActionResult> GetAllOrders()
         {
             List<Order> orders = await bookService.GetOrdersAll();
-            logger.LogInformation("Get All books");
+            logger.LogInformation("Get All Orders");
             return Ok(orders);
         }
 
         [HttpPost]
         public async Task<IActionResult> AddBook(AddBookDto Dto)
         {
-            Core.Book book = await bookService.AddBook(Dto);
+            Book.Core.Book book = await bookService.AddBook(Dto);
             return Ok(book);
         }
 
@@ -46,11 +43,11 @@ namespace OnlineBookstore.Controllers
         }
 
         [HttpGet]
-        [Route("{id:guid}")]
+        [Route("Order/{id:guid}")]
         public async Task<IActionResult> GetOrderById(Guid id)
         {
             Order order = await bookService.GetOrderById(id);
-            logger.LogInformation("Get book by id");
+            logger.LogInformation("Get Order by id");
             return Ok(order);
         }
 
