@@ -128,11 +128,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/6.0.32": {
+      "Microsoft.EntityFrameworkCore/6.0.33": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.32",
-          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.32",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.33",
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.33",
           "Microsoft.Extensions.Caching.Memory": "6.0.1",
           "Microsoft.Extensions.DependencyInjection": "6.0.1",
           "Microsoft.Extensions.Logging": "6.0.0",
@@ -153,7 +153,7 @@
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/6.0.32": {
+      "Microsoft.EntityFrameworkCore.Abstractions/6.0.33": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -166,7 +166,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/6.0.32": {
+      "Microsoft.EntityFrameworkCore.Analyzers/6.0.33": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -195,10 +195,10 @@
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/6.0.32": {
+      "Microsoft.EntityFrameworkCore.Relational/6.0.33": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.32",
+          "Microsoft.EntityFrameworkCore": "6.0.33",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         },
         "compile": {
@@ -212,11 +212,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/6.0.32": {
+      "Microsoft.EntityFrameworkCore.SqlServer/6.0.33": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SqlClient": "2.1.7",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.32"
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.33"
         },
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -1257,6 +1257,45 @@
             "rid": "win"
           }
         }
+      },
+      "OnlineBookstore.Book.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "OnlineBookstore.Book.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBookstore.Book.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookstore.Book.Application.dll": {}
+        }
+      },
+      "OnlineBookstore.Book.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/OnlineBookstore.Book.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookstore.Book.Core.dll": {}
+        }
+      },
+      "OnlineBookstore.Book.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
+          "OnlineBookstore.Book.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBookstore.Book.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookstore.Book.DataAccess.dll": {}
+        }
       }
     }
   },
@@ -1477,10 +1516,10 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
-    "Microsoft.EntityFrameworkCore/6.0.32": {
-      "sha512": "g3kACXbTWZx4Oy7e3+8eWTe1658p6GeTgzjW9xCsItZWr8KHUcpBdP4hSn1eOHVAEFS/GUaswRokk0+sFFTAgQ==",
+    "Microsoft.EntityFrameworkCore/6.0.33": {
+      "sha512": "pPfX/pnnr+decWaBkGA43PwNTYMf4vhdk7fTLroHQF8d1LDjtj+C7sar2ogchKLzpIx5GjhptabJYjSxz/BGmA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/6.0.32",
+      "path": "microsoft.entityframeworkcore/6.0.33",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1488,35 +1527,35 @@
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.6.0.32.nupkg.sha512",
+        "microsoft.entityframeworkcore.6.0.33.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/6.0.32": {
-      "sha512": "rkvYDFH414rr4x8yGwPqHhws+52+uJqEWod+AmpjR9iiSS1lp8i4pJ9NOQGlttMHb2sJvL5Gt/YSqk0ptDVXzA==",
+    "Microsoft.EntityFrameworkCore.Abstractions/6.0.33": {
+      "sha512": "8oufYRCOtzo/sLFUQ5nzh/R9Qn026fyjc6vgdMMGMW3AHdWj0djbQeVZf0np8eGjihRDtfFG2F8ckTphkOBAzQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/6.0.32",
+      "path": "microsoft.entityframeworkcore.abstractions/6.0.33",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.6.0.32.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.6.0.33.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/6.0.32": {
-      "sha512": "pOlf6xYC6MUbcDEZ019GeRBgWl4P7w9zXI12ZRYmWjsdlA/VHTKzlnRr21LlHpZNvj/0JEPzXTds399GfDESGg==",
+    "Microsoft.EntityFrameworkCore.Analyzers/6.0.33": {
+      "sha512": "MXIRItpxrFCccOBB0thHjRxKuA06w88qE8qa7A/eo6cWx6BOfScEe35+enH9T5eYUwCfW0CcneyP3v7TRKedTQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/6.0.32",
+      "path": "microsoft.entityframeworkcore.analyzers/6.0.33",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.6.0.32.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.6.0.33.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -1535,31 +1574,31 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/6.0.32": {
-      "sha512": "K5glZxfgjT5yZjE2tw+SzLWFhUXSt6m6joXl1yM2JQHwb3t7EDC7V75w/v8gZXZLOdZ7t3rqJok7vqtI1arfwA==",
+    "Microsoft.EntityFrameworkCore.Relational/6.0.33": {
+      "sha512": "PlnRpPNbY/jGs5RYfqTce5CBafF/hDPXnea2hE80huJdv1+JThVRWXOc6WCaJ+Jmd2420QeJs0ouI9mEr19kUA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/6.0.32",
+      "path": "microsoft.entityframeworkcore.relational/6.0.33",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.6.0.32.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.6.0.33.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/6.0.32": {
-      "sha512": "gahkT7niO7ZBEQ1KE2gpntI44+60v78mk71zULOizmJuozgrvfno6JJSaReqxgWyi+exkuaehF8yGgeGDMh0Pg==",
+    "Microsoft.EntityFrameworkCore.SqlServer/6.0.33": {
+      "sha512": "e/b7Kl5J0l97lKVWtOzEVEP2W7oYJRKDjfqpxYNqpyiYV9A+TQlszIjyHU2BL9BBeAFIulElJlK1COWGulIfCQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/6.0.32",
+      "path": "microsoft.entityframeworkcore.sqlserver/6.0.33",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.6.0.32.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.6.0.33.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
@@ -3198,6 +3237,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "OnlineBookstore.Book.Application/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookstore.Book.Application/OnlineBookstore.Book.Application.csproj",
+      "msbuildProject": "../OnlineBookstore.Book.Application/OnlineBookstore.Book.Application.csproj"
+    },
+    "OnlineBookstore.Book.Core/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookstore.Book.Core/OnlineBookstore.Book.Core.csproj",
+      "msbuildProject": "../OnlineBookstore.Book.Core/OnlineBookstore.Book.Core.csproj"
+    },
+    "OnlineBookstore.Book.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookstore.Book.DataAccess/OnlineBookstore.Book.DataAccess.csproj",
+      "msbuildProject": "../OnlineBookstore.Book.DataAccess/OnlineBookstore.Book.DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3205,8 +3259,10 @@
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.33",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.32",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.33",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.32",
+      "OnlineBookstore.Book.Application >= 1.0.0",
+      "OnlineBookstore.Book.DataAccess >= 1.0.0",
       "Serilog.AspNetCore >= 6.1.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -3237,7 +3293,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\OnlineBookstore\\OnlineBookstore.Book.Application\\OnlineBookstore.Book.Application.csproj": {
+              "projectPath": "D:\\OnlineBookstore\\OnlineBookstore.Book.Application\\OnlineBookstore.Book.Application.csproj"
+            },
+            "D:\\OnlineBookstore\\OnlineBookstore.Book.DataAccess\\OnlineBookstore.Book.DataAccess.csproj": {
+              "projectPath": "D:\\OnlineBookstore\\OnlineBookstore.Book.DataAccess\\OnlineBookstore.Book.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -3264,7 +3327,7 @@
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
-            "version": "[6.0.32, )"
+            "version": "[6.0.33, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

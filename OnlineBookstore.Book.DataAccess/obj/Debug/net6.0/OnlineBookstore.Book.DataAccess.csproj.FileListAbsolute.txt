@@ -1,0 +1,17 @@
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\OnlineBookstore.Book.DataAccess.csproj.AssemblyReference.cache
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\OnlineBookstore.Book.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\OnlineBookstore.Book.DataAccess.AssemblyInfoInputs.cache
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\OnlineBookstore.Book.DataAccess.AssemblyInfo.cs
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\OnlineBookstore.Book.DataAccess.csproj.CoreCompileInputs.cache
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\bin\Debug\net6.0\OnlineBookstore.Book.DataAccess.deps.json
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\bin\Debug\net6.0\OnlineBookstore.Book.DataAccess.runtimeconfig.json
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\bin\Debug\net6.0\OnlineBookstore.Book.DataAccess.dll
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\bin\Debug\net6.0\OnlineBookstore.Book.DataAccess.pdb
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\bin\Debug\net6.0\OnlineBookstore.Book.Core.dll
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\bin\Debug\net6.0\OnlineBookstore.Book.Core.pdb
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\OnlineBookstore.Book.DataAccess.csproj.CopyComplete
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\OnlineBookstore.Book.DataAccess.dll
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\refint\OnlineBookstore.Book.DataAccess.dll
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\OnlineBookstore.Book.DataAccess.pdb
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\OnlineBookstore.Book.DataAccess.genruntimeconfig.cache
+D:\OnlineBookstore\OnlineBookstore.Book.DataAccess\obj\Debug\net6.0\ref\OnlineBookstore.Book.DataAccess.dll

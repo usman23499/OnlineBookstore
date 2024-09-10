@@ -10,7 +10,7 @@ namespace OnlineBookstore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class BookController : ControllerBase
     {
         private readonly IBookService bookService;
@@ -33,7 +33,7 @@ namespace OnlineBookstore.Controllers
         [HttpPost]
         public async Task<IActionResult> AddBook(AddBookDto Dto)
         {
-            Book book = await bookService.AddBook(Dto);
+            Core.Book book = await bookService.AddBook(Dto);
             return Ok(book);
         }
 

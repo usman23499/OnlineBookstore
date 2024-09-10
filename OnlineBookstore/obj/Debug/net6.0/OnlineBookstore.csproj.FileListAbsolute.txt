@@ -3,7 +3,6 @@ D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.GeneratedMSB
 D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.AssemblyInfoInputs.cache
 D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.AssemblyInfo.cs
 D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.csproj.CoreCompileInputs.cache
-D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.MvcApplicationPartsAssemblyInfo.cs
 D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.MvcApplicationPartsAssemblyInfo.cache
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\appsettings.Development.json
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\appsettings.json
@@ -75,3 +74,9 @@ D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Settings.Configurati
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\Serilog.Sinks.File.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.Application.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.Core.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.DataAccess.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.Application.pdb
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.DataAccess.pdb
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.Core.pdb

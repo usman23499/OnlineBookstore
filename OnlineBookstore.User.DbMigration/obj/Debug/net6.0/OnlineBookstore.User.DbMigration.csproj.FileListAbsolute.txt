@@ -1,0 +1,5 @@
+D:\OnlineBookstore\OnlineBookstore.User.DbMigration\obj\Debug\net6.0\OnlineBookstore.User.DbMigration.csproj.AssemblyReference.cache
+D:\OnlineBookstore\OnlineBookstore.User.DbMigration\obj\Debug\net6.0\OnlineBookstore.User.DbMigration.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineBookstore\OnlineBookstore.User.DbMigration\obj\Debug\net6.0\OnlineBookstore.User.DbMigration.AssemblyInfoInputs.cache
+D:\OnlineBookstore\OnlineBookstore.User.DbMigration\obj\Debug\net6.0\OnlineBookstore.User.DbMigration.AssemblyInfo.cs
+D:\OnlineBookstore\OnlineBookstore.User.DbMigration\obj\Debug\net6.0\OnlineBookstore.User.DbMigration.csproj.CoreCompileInputs.cache
