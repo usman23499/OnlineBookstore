@@ -1296,6 +1296,49 @@
         "runtime": {
           "bin/placeholder/OnlineBookstore.Book.DataAccess.dll": {}
         }
+      },
+      "OnlineBookStore.User.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "OnlineBookStore.User.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBookStore.User.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookStore.User.Application.dll": {}
+        }
+      },
+      "OnlineBookStore.User.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.33"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBookStore.User.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookStore.User.Core.dll": {}
+        }
+      },
+      "OnlineBookStore.User.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.EntityFrameworkCore": "6.0.33",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
+          "OnlineBookStore.User.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBookStore.User.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookStore.User.DataAccess.dll": {}
+        }
       }
     }
   },
@@ -3252,6 +3295,21 @@
       "type": "project",
       "path": "../OnlineBookstore.Book.DataAccess/OnlineBookstore.Book.DataAccess.csproj",
       "msbuildProject": "../OnlineBookstore.Book.DataAccess/OnlineBookstore.Book.DataAccess.csproj"
+    },
+    "OnlineBookStore.User.Application/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookStore.User.Application/OnlineBookStore.User.Application.csproj",
+      "msbuildProject": "../OnlineBookStore.User.Application/OnlineBookStore.User.Application.csproj"
+    },
+    "OnlineBookStore.User.Core/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookStore.User.Core/OnlineBookStore.User.Core.csproj",
+      "msbuildProject": "../OnlineBookStore.User.Core/OnlineBookStore.User.Core.csproj"
+    },
+    "OnlineBookStore.User.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookStore.User.DataAccess/OnlineBookStore.User.DataAccess.csproj",
+      "msbuildProject": "../OnlineBookStore.User.DataAccess/OnlineBookStore.User.DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3261,6 +3319,8 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.33",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.33",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.33",
+      "OnlineBookStore.User.Application >= 1.0.0",
+      "OnlineBookStore.User.DataAccess >= 1.0.0",
       "OnlineBookstore.Book.Application >= 1.0.0",
       "OnlineBookstore.Book.DataAccess >= 1.0.0",
       "Serilog.AspNetCore >= 6.1.0",
@@ -3299,6 +3359,12 @@
             },
             "D:\\OnlineBookstore\\OnlineBookstore.Book.DataAccess\\OnlineBookstore.Book.DataAccess.csproj": {
               "projectPath": "D:\\OnlineBookstore\\OnlineBookstore.Book.DataAccess\\OnlineBookstore.Book.DataAccess.csproj"
+            },
+            "D:\\OnlineBookstore\\OnlineBookStore.User.Application\\OnlineBookStore.User.Application.csproj": {
+              "projectPath": "D:\\OnlineBookstore\\OnlineBookStore.User.Application\\OnlineBookStore.User.Application.csproj"
+            },
+            "D:\\OnlineBookstore\\OnlineBookStore.User.DataAccess\\OnlineBookStore.User.DataAccess.csproj": {
+              "projectPath": "D:\\OnlineBookstore\\OnlineBookStore.User.DataAccess\\OnlineBookStore.User.DataAccess.csproj"
             }
           }
         }

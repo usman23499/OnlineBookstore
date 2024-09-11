@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wRNUIPb7Tw3FFkPgcB5oXsGWPUULlGu8F2I7SruVJ/PIt716VdzpwmLf+tHr17UsfKTwS5ijjCPWPq7Hz9L4Hw==",
-  "success": false,
-  "projectFilePath": "D:\\OnlineBookstore\\OnlineBookstore.User.DataAccess\\OnlineBookstore.User.DataAccess.csproj",
+  "dgSpecHash": "RfHWObTjKl2OdBEE04kErx0O1eMD5sI6Kam57FIaRR0lc8+Ghe3sNd6GDDd3PGySQILmSOD3rq5QSyjarcj1RA==",
+  "success": true,
+  "projectFilePath": "D:\\OnlineBookstore\\OnlineBookStore.User.DataAccess\\OnlineBookStore.User.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -10,26 +10,19 @@
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.32\\microsoft.entityframeworkcore.6.0.32.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.32\\microsoft.entityframeworkcore.abstractions.6.0.32.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.32\\microsoft.entityframeworkcore.analyzers.6.0.32.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.32\\microsoft.entityframeworkcore.relational.6.0.32.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.32\\microsoft.entityframeworkcore.sqlserver.6.0.32.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.33\\microsoft.entityframeworkcore.6.0.33.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.33\\microsoft.entityframeworkcore.abstractions.6.0.33.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.33\\microsoft.entityframeworkcore.analyzers.6.0.33.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.33\\microsoft.entityframeworkcore.relational.6.0.33.nupkg.sha512",
+    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.33\\microsoft.entityframeworkcore.sqlserver.6.0.33.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.configuration\\2.0.0\\microsoft.extensions.configuration.2.0.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.configuration.binder\\2.0.0\\microsoft.extensions.configuration.binder.2.0.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.0.0\\microsoft.extensions.dependencymodel.3.0.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.8\\microsoft.extensions.fileproviders.abstractions.3.1.8.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\3.1.8\\microsoft.extensions.hosting.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\2.0.0\\microsoft.extensions.options.configurationextensions.2.0.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.identity.client\\4.21.1\\microsoft.identity.client.4.21.1.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
@@ -40,22 +33,8 @@
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.35.0\\microsoft.identitymodel.tokens.6.35.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\serilog.aspnetcore\\6.1.0\\serilog.aspnetcore.6.1.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\serilog.extensions.hosting\\5.0.1\\serilog.extensions.hosting.5.0.1.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\serilog.extensions.logging\\3.1.0\\serilog.extensions.logging.3.1.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\serilog.formatting.compact\\1.1.0\\serilog.formatting.compact.1.1.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\serilog.settings.configuration\\3.3.0\\serilog.settings.configuration.3.3.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\serilog.sinks.console\\4.0.1\\serilog.sinks.console.4.0.1.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
@@ -75,15 +54,5 @@
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\SAAD COMMUNICATION\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.SqlServer from 6.0.33 to 6.0.32. Reference the package directly from the project to select a different version. \r\n OnlineBookstore.User.DataAccess -> OnlineBookstore -> OnlineBookstore.Book.DataAccess -> Microsoft.EntityFrameworkCore.SqlServer (>= 6.0.33) \r\n OnlineBookstore.User.DataAccess -> OnlineBookstore -> Microsoft.EntityFrameworkCore.SqlServer (>= 6.0.32)",
-      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

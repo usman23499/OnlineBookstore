@@ -1,14 +1,11 @@
-﻿using OnlineBookstore.Application.User.Dto;
-using OnlineBookstore.Core.User;
+﻿using OnlineBookstore.User.Application.Dto;
+using OnlineBookStore.User.Core;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace OnlineBookstore.User.Application
 {
-    public class UserService: IUserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
         private readonly ITokenHandler _tokenHandler;
@@ -32,42 +29,40 @@ namespace OnlineBookstore.User.Application
         public async Task<UserRM> Login(string username, string password)
         {
             UserRM userRm = await _userRepository.Login(username, password);
-            if (userRm == null)
+            if(userRm == null)
             {
                 throw new ArgumentNullException("No User Exsist");
             }
-            userRm.Token = await _tokenHandler.CreateToker(userRm);
-
+            userRm.Token = await _tokenHandler.CreateToker(userRm); 
+            
             return userRm;
         }
 
-        public async Task<Core.User> Register(UserDTO user)
+        public async Task<OnlineBookStore.User.Core.User> Register(UserDTO user)
         {
-            //Core.User newUser = Core.User.Create(
-            //    user.Name,
-            //    user.Email,
-            //    user.Password
-            //    );
+            OnlineBookStore.User.Core.User newUser = OnlineBookStore.User.Core.User.Create(
+                user.Name,
+                user.Email,
+                user.Password
+                );
 
-            //Core.User CheckUser = await _userRepository.GetUserByEmail(user.Email);
+            OnlineBookStore.User.Core.User CheckUser = await _userRepository.GetUserByEmail(user.Email);
+            
+            if(CheckUser != null)
+                throw new ArgumentNullException("User Already Exsist");
+            if (user.UserRoleName == null)
+                throw new ArgumentNullException("Invalid Role");
 
-            //if (CheckUser != null)
-            //    throw new ArgumentNullException("User Already Exsist");
-            //if (user.UserRoleName == null)
-            //    throw new ArgumentNullException("Invalid Role");
+            foreach (string roleName in user.UserRoleName)
+            {
+                Role CheckRole = await _userRepository.GetRoleByName(roleName);
+                if (CheckRole == null)
+                    throw new ArgumentNullException("Invalid Role");
+                newUser.AddUserRole(CheckRole.Id);   
+            }
 
-            //foreach (string roleName in user.UserRoleName)
-            //{
-            //    Role CheckRole = await _userRepository.GetRoleByName(roleName);
-            //    if (CheckRole == null)
-            //        throw new ArgumentNullException("Invalid Role");
-            //    newUser.AddUserRole(CheckRole.Id);
-            //}
-
-            //await _userRepository.Register(newUser);
-            //return newUser;
-
-            return null;
+            await _userRepository.Register(newUser);
+            return newUser;
         }
     }
 }

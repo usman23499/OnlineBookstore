@@ -23,6 +23,8 @@
   <ItemGroup>
     <ProjectReference Include="..\OnlineBookstore.Book.Application\OnlineBookstore.Book.Application.csproj" />
     <ProjectReference Include="..\OnlineBookstore.Book.DataAccess\OnlineBookstore.Book.DataAccess.csproj" />
+    <ProjectReference Include="..\OnlineBookStore.User.Application\OnlineBookStore.User.Application.csproj" />
+    <ProjectReference Include="..\OnlineBookStore.User.DataAccess\OnlineBookStore.User.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

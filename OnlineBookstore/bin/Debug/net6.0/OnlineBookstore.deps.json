@@ -13,6 +13,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.33",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.33",
+          "OnlineBookStore.User.Application": "1.0.0",
+          "OnlineBookStore.User.DataAccess": "1.0.0",
           "OnlineBookstore.Book.Application": "1.0.0",
           "OnlineBookstore.Book.DataAccess": "1.0.0",
           "Serilog.AspNetCore": "6.1.0",
@@ -738,6 +740,34 @@
         "runtime": {
           "OnlineBookstore.Book.DataAccess.dll": {}
         }
+      },
+      "OnlineBookStore.User.Application/1.0.0": {
+        "dependencies": {
+          "OnlineBookStore.User.Core": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBookStore.User.Application.dll": {}
+        }
+      },
+      "OnlineBookStore.User.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.33"
+        },
+        "runtime": {
+          "OnlineBookStore.User.Core.dll": {}
+        }
+      },
+      "OnlineBookStore.User.DataAccess/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.EntityFrameworkCore": "6.0.33",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
+          "OnlineBookStore.User.Core": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBookStore.User.DataAccess.dll": {}
+        }
       }
     }
   },
@@ -1269,6 +1299,21 @@
       "sha512": ""
     },
     "OnlineBookstore.Book.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBookStore.User.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBookStore.User.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBookStore.User.DataAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

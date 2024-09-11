@@ -1,16 +1,20 @@
-﻿
-using OnlineBookstore.Core.User;
-using OnlineBookstore.DataAccess.User.DAO;
+﻿using OnlineBookStore.User.DataAccess.DAO;
 using System.Data;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using OnlineBookStore.User.Core;
+using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
-namespace OnlineBookstore.DataAccess.User
+namespace OnlineBookStore.User.DataAccess
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository: IUserRepository
     {
-        private readonly BookDBContext _context;
+        private readonly UserDBContext _context;
         private readonly IMapper _mapper;
-        public UserRepository(BookDBContext context, IMapper mapper)
-        {    
+        public UserRepository(UserDBContext context, IMapper mapper)
+        {
             _context = context;
             _mapper = mapper;
         }
@@ -18,8 +22,8 @@ namespace OnlineBookstore.DataAccess.User
         {
             UserDAO user = await _context
                 .Users
-                .Include(x=>x.UserRoles)
-                .FirstOrDefaultAsync(x=> x.Email == email && x.Password == password);
+                .Include(x => x.UserRoles)
+                .FirstOrDefaultAsync(x => x.Email == email && x.Password == password);
             if (user == null)
                 return null;
 
@@ -35,12 +39,12 @@ namespace OnlineBookstore.DataAccess.User
             return new UserRM()
             {
                 Email = email,
-                Name  = user.Name,
+                Name = user.Name,
                 Roles = roles,
             };
         }
 
-        public async Task<Core.User.User> Register(Core.User.User user)
+        public async Task<Core.User> Register(Core.User user)
         {
             UserDAO userDAO = _mapper.Map<UserDAO>(user);
             userDAO.UserRoles = _mapper.Map<List<UserRoleDAO>>(user._UserRoles);
@@ -56,7 +60,7 @@ namespace OnlineBookstore.DataAccess.User
             await _context.SaveChangesAsync();
 
             return new RoleRM()
-            { 
+            {
                 Id = role.Id,
                 Name = role.Name,
             };
@@ -75,19 +79,19 @@ namespace OnlineBookstore.DataAccess.User
             RoleDAO roleDAO = await _context
                 .Roles
                 .FirstOrDefaultAsync(x => x.Name == roleName);
-            
+
             if (roleDAO == null)
                 return null;
             return Role.Create(roleDAO.Id, roleDAO.Name);
         }
 
-        public async Task<Core.User.User> GetUserByEmail(string email)
+        public async Task<Core.User> GetUserByEmail(string email)
         {
             UserDAO userDAO = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
             if (userDAO == null)
                 return null;
-            
-            return Core.User.User
+
+            return Core.User
                 .Create(userDAO.Id,
                 userDAO.Name,
                 userDAO.Email,

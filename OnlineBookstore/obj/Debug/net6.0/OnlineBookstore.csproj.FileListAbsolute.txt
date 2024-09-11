@@ -81,3 +81,9 @@ D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.Applica
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.DataAccess.pdb
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Book.Core.pdb
 D:\OnlineBookstore\OnlineBookstore\obj\Debug\net6.0\OnlineBookstore.MvcApplicationPartsAssemblyInfo.cs
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.Application.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.Core.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.DataAccess.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.Application.pdb
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.DataAccess.pdb
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.Core.pdb

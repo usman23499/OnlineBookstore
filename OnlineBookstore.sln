@@ -7,13 +7,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookstore", "OnlineBo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineBookstore.Book", "OnlineBookstore.Book", "{CA9F44D8-517A-4406-B2EA-5538F7FE7B84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.Book.Core", "OnlineBookstore.Book.Core\OnlineBookstore.Book.Core.csproj", "{C3B156B9-2C52-4C20-9AEE-7D08283BA94F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookstore.Book.Core", "OnlineBookstore.Book.Core\OnlineBookstore.Book.Core.csproj", "{C3B156B9-2C52-4C20-9AEE-7D08283BA94F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.Book.DataAccess", "OnlineBookstore.Book.DataAccess\OnlineBookstore.Book.DataAccess.csproj", "{F745A564-3288-4E23-B9CE-0263881630C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookstore.Book.DataAccess", "OnlineBookstore.Book.DataAccess\OnlineBookstore.Book.DataAccess.csproj", "{F745A564-3288-4E23-B9CE-0263881630C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookstore.Book.Application", "OnlineBookstore.Book.Application\OnlineBookstore.Book.Application.csproj", "{1047D80B-6A4A-46CF-8579-27109BB658ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookstore.Book.Application", "OnlineBookstore.Book.Application\OnlineBookstore.Book.Application.csproj", "{1047D80B-6A4A-46CF-8579-27109BB658ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBookStore.Book.DbMigration", "OnlineBookStore.Book.DbMigration\OnlineBookStore.Book.DbMigration.csproj", "{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookStore.Book.DbMigration", "OnlineBookStore.Book.DbMigration\OnlineBookStore.Book.DbMigration.csproj", "{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineBookStore.User", "OnlineBookStore.User", "{14A00020-83FE-4CBE-92A8-3222A3AC3C5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookStore.User.Core", "OnlineBookStore.User.Core\OnlineBookStore.User.Core.csproj", "{4FA4037D-D3FA-4A06-8EB3-46112D197E8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookStore.User.DataAccess", "OnlineBookStore.User.DataAccess\OnlineBookStore.User.DataAccess.csproj", "{C7AD00DE-7BF3-4892-A2C6-9A1233C3BE72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookStore.User.DbMigration", "OnlineBookStore.User.DbMigrations\OnlineBookStore.User.DbMigration.csproj", "{66F3EBF6-F79B-4E8A-8899-979A6683FBE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookStore.User.Application", "OnlineBookStore.User.Application\OnlineBookStore.User.Application.csproj", "{36548165-2B94-4B76-B680-A832CF51E3BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +51,22 @@ Global
 		{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FCCEFB9-A216-4390-A94A-99D4417ED8AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA4037D-D3FA-4A06-8EB3-46112D197E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA4037D-D3FA-4A06-8EB3-46112D197E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA4037D-D3FA-4A06-8EB3-46112D197E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA4037D-D3FA-4A06-8EB3-46112D197E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7AD00DE-7BF3-4892-A2C6-9A1233C3BE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7AD00DE-7BF3-4892-A2C6-9A1233C3BE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7AD00DE-7BF3-4892-A2C6-9A1233C3BE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7AD00DE-7BF3-4892-A2C6-9A1233C3BE72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F3EBF6-F79B-4E8A-8899-979A6683FBE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F3EBF6-F79B-4E8A-8899-979A6683FBE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F3EBF6-F79B-4E8A-8899-979A6683FBE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F3EBF6-F79B-4E8A-8899-979A6683FBE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36548165-2B94-4B76-B680-A832CF51E3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36548165-2B94-4B76-B680-A832CF51E3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36548165-2B94-4B76-B680-A832CF51E3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36548165-2B94-4B76-B680-A832CF51E3BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +76,10 @@ Global
 		{F745A564-3288-4E23-B9CE-0263881630C8} = {CA9F44D8-517A-4406-B2EA-5538F7FE7B84}
 		{1047D80B-6A4A-46CF-8579-27109BB658ED} = {CA9F44D8-517A-4406-B2EA-5538F7FE7B84}
 		{8FCCEFB9-A216-4390-A94A-99D4417ED8AB} = {CA9F44D8-517A-4406-B2EA-5538F7FE7B84}
+		{4FA4037D-D3FA-4A06-8EB3-46112D197E8A} = {14A00020-83FE-4CBE-92A8-3222A3AC3C5B}
+		{C7AD00DE-7BF3-4892-A2C6-9A1233C3BE72} = {14A00020-83FE-4CBE-92A8-3222A3AC3C5B}
+		{66F3EBF6-F79B-4E8A-8899-979A6683FBE2} = {14A00020-83FE-4CBE-92A8-3222A3AC3C5B}
+		{36548165-2B94-4B76-B680-A832CF51E3BD} = {14A00020-83FE-4CBE-92A8-3222A3AC3C5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9A09123-556D-4981-847D-1D9194033771}

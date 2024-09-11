@@ -1,9 +1,16 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using OnlineBook.Book.DataAccess;
 using OnlineBookstore.Book.Application;
 using OnlineBookstore.Book.Core;
 using OnlineBookstore.Book.DataAccess;
-
+using OnlineBookstore.User.Application;
+using OnlineBookStore.User.Core;
+using OnlineBookStore.User.DataAccess;
+using Serilog;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,49 +21,34 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddSwaggerGen(options =>
-//{
-//    var securityScheme = new OpenApiSecurityScheme
-//    {
-//        Name = "JWT Authentication",
-//        Description = "Enter a valid JWT bearer token",
-//        In = ParameterLocation.Header,
-//        Type = SecuritySchemeType.Http,
-//        Scheme = "bearer",
-//        BearerFormat = "JWT",
-//        Reference = new OpenApiReference
-//        {
-//            Id = JwtBearerDefaults.AuthenticationScheme,
-//            Type = ReferenceType.SecurityScheme
-//        }
-//    };
+builder.Services.AddSwaggerGen(options =>
+{
+    var securityScheme = new OpenApiSecurityScheme
+    {
+        Name = "JWT Authentication",
+        Description = "Enter a valid JWT bearer token",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        Reference = new OpenApiReference
+        {
+            Id = JwtBearerDefaults.AuthenticationScheme,
+            Type = ReferenceType.SecurityScheme
+        }
+    };
 
-//    options.AddSecurityDefinition(securityScheme.Reference.Id, securityScheme);
-//    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-//    {
-//        {securityScheme, new string[] {} }
-//    });
-//});
-
-// in inject db context
-//builder.Services.AddDbContext<BookDBContext>(options =>
-//{
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineBook"));
-//    // this connection in appsetting.json
-//});
-
-//builder.Services.AddTransient<IBookRepository, BookRepository>();
-//builder.Services.AddTransient<IOrderRepository, OrderRepository>();
-//builder.Services.AddTransient<IUserRepository, UserRepository>();
-
-//builder.Services.AddTransient<IBookService, BookService>();
-//builder.Services.AddTransient<IUserService, UserService>();
-//builder.Services.AddTransient<ITokenHandler, OnlineBookstore.Core.User.TokenHandler>();
+    options.AddSecurityDefinition(securityScheme.Reference.Id, securityScheme);
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {securityScheme, new string[] {} }
+    });
+});
 
 //Book MicroService
 builder.Services.AddDbContext<BookDBContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineBookMicroService"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineBookMicroService.Book"));
     // this connection in appsetting.json
 });
 
@@ -64,32 +56,43 @@ builder.Services.AddTransient<IBookRepository, BookRepository>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
 builder.Services.AddTransient<IBookService, BookService>();
 
+//User MicroService
+builder.Services.AddDbContext<UserDBContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineBookMicroService.User"));
+    // this connection in appsetting.json
+});
+builder.Services.AddTransient<IUserRepository, UserRepository>();
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<ITokenHandler, OnlineBookStore.User.Core.TokenHandler>();
+
 
 // inject mapper
 builder.Services.AddAutoMapper(config =>
 {
     config.AddMaps(new[]
     {
-    "OnlineBookstore.Book.DataAccess"
+    "OnlineBookstore.Book.DataAccess",
+    "OnlineBookStore.User.DataAccess"
     });
 },typeof(Program).Assembly);
 
-//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-//    .AddJwtBearer(options =>
-//    options.TokenValidationParameters = new TokenValidationParameters
-//    {
-//        ValidateIssuer = true,
-//        ValidateAudience = true,
-//        ValidateLifetime = true,
-//        ValidateIssuerSigningKey = true,
-//        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-//        ValidAudience = builder.Configuration["Jwt:Audience"],
-//        IssuerSigningKey = new SymmetricSecurityKey(
-//            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-//    });
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    });
 
-//builder.Host.UseSerilog((context, configuration) =>
-//    configuration.ReadFrom.Configuration(context.Configuration));
+builder.Host.UseSerilog((context, configuration) =>
+    configuration.ReadFrom.Configuration(context.Configuration));
 
 
 var app = builder.Build();
@@ -103,9 +106,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-//app.UseAuthentication();
+app.UseAuthentication();
 
-//app.UseAuthorization();
+app.UseAuthorization();
 
 app.MapControllers();
 

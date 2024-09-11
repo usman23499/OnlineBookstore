@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OnlineBookstore.Book.Application": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "Project"
+    }
+  }
+}
