@@ -87,3 +87,13 @@ D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.DataAcc
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.Application.pdb
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.DataAccess.pdb
 D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.User.Core.pdb
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.Common.Core.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.Common.DataAccess.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Report.Application.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Report.Core.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Report.DataAccess.dll
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Report.Application.pdb
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.Common.Core.pdb
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookStore.Common.DataAccess.pdb
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Report.Core.pdb
+D:\OnlineBookstore\OnlineBookstore\bin\Debug\net6.0\OnlineBookstore.Report.DataAccess.pdb

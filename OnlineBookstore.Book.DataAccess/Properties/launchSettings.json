@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "OnlineBookstore.Book.DataAccess": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:56452;http://localhost:56460"
+    }
+  }
+}

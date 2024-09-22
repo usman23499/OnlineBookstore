@@ -1297,6 +1297,72 @@
           "bin/placeholder/OnlineBookstore.Book.DataAccess.dll": {}
         }
       },
+      "OnlineBookStore.Common.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/OnlineBookStore.Common.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookStore.Common.Core.dll": {}
+        }
+      },
+      "OnlineBookStore.Common.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.33",
+          "OnlineBookStore.Common.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBookStore.Common.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookStore.Common.DataAccess.dll": {}
+        }
+      },
+      "OnlineBookstore.Report.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "OnlineBookstore.Report.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBookstore.Report.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookstore.Report.Application.dll": {}
+        }
+      },
+      "OnlineBookstore.Report.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "OnlineBookStore.Common.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBookstore.Report.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookstore.Report.Core.dll": {}
+        }
+      },
+      "OnlineBookstore.Report.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.33",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
+          "OnlineBookStore.Common.DataAccess": "1.0.0",
+          "OnlineBookstore.Report.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineBookstore.Report.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineBookstore.Report.DataAccess.dll": {}
+        }
+      },
       "OnlineBookStore.User.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3296,6 +3362,31 @@
       "path": "../OnlineBookstore.Book.DataAccess/OnlineBookstore.Book.DataAccess.csproj",
       "msbuildProject": "../OnlineBookstore.Book.DataAccess/OnlineBookstore.Book.DataAccess.csproj"
     },
+    "OnlineBookStore.Common.Core/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookStore.Common.Core/OnlineBookStore.Common.Core.csproj",
+      "msbuildProject": "../OnlineBookStore.Common.Core/OnlineBookStore.Common.Core.csproj"
+    },
+    "OnlineBookStore.Common.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookStore.Common.DataAccess/OnlineBookStore.Common.DataAccess.csproj",
+      "msbuildProject": "../OnlineBookStore.Common.DataAccess/OnlineBookStore.Common.DataAccess.csproj"
+    },
+    "OnlineBookstore.Report.Application/1.0.0": {
+      "type": "project",
+      "path": "../Onlinestore.Report.Application/OnlineBookstore.Report.Application.csproj",
+      "msbuildProject": "../Onlinestore.Report.Application/OnlineBookstore.Report.Application.csproj"
+    },
+    "OnlineBookstore.Report.Core/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookstore.Reporting.Core/OnlineBookstore.Report.Core.csproj",
+      "msbuildProject": "../OnlineBookstore.Reporting.Core/OnlineBookstore.Report.Core.csproj"
+    },
+    "OnlineBookstore.Report.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../OnlineBookstore.Report.DataAccess/OnlineBookstore.Report.DataAccess.csproj",
+      "msbuildProject": "../OnlineBookstore.Report.DataAccess/OnlineBookstore.Report.DataAccess.csproj"
+    },
     "OnlineBookStore.User.Application/1.0.0": {
       "type": "project",
       "path": "../OnlineBookStore.User.Application/OnlineBookStore.User.Application.csproj",
@@ -3323,6 +3414,7 @@
       "OnlineBookStore.User.DataAccess >= 1.0.0",
       "OnlineBookstore.Book.Application >= 1.0.0",
       "OnlineBookstore.Book.DataAccess >= 1.0.0",
+      "OnlineBookstore.Report.Application >= 1.0.0",
       "Serilog.AspNetCore >= 6.1.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -3365,6 +3457,9 @@
             },
             "D:\\OnlineBookstore\\OnlineBookStore.User.DataAccess\\OnlineBookStore.User.DataAccess.csproj": {
               "projectPath": "D:\\OnlineBookstore\\OnlineBookStore.User.DataAccess\\OnlineBookStore.User.DataAccess.csproj"
+            },
+            "D:\\OnlineBookstore\\Onlinestore.Report.Application\\OnlineBookstore.Report.Application.csproj": {
+              "projectPath": "D:\\OnlineBookstore\\Onlinestore.Report.Application\\OnlineBookstore.Report.Application.csproj"
             }
           }
         }

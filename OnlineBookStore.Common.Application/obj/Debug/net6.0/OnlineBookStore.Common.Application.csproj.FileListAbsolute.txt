@@ -1,0 +1,12 @@
+D:\OnlineBookstore\OnlineBookStore.Common.Application\bin\Debug\net6.0\OnlineBookStore.Common.Application.deps.json
+D:\OnlineBookstore\OnlineBookStore.Common.Application\bin\Debug\net6.0\OnlineBookStore.Common.Application.dll
+D:\OnlineBookstore\OnlineBookStore.Common.Application\bin\Debug\net6.0\OnlineBookStore.Common.Application.pdb
+D:\OnlineBookstore\OnlineBookStore.Common.Application\obj\Debug\net6.0\OnlineBookStore.Common.Application.csproj.AssemblyReference.cache
+D:\OnlineBookstore\OnlineBookStore.Common.Application\obj\Debug\net6.0\OnlineBookStore.Common.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineBookstore\OnlineBookStore.Common.Application\obj\Debug\net6.0\OnlineBookStore.Common.Application.AssemblyInfoInputs.cache
+D:\OnlineBookstore\OnlineBookStore.Common.Application\obj\Debug\net6.0\OnlineBookStore.Common.Application.AssemblyInfo.cs
+D:\OnlineBookstore\OnlineBookStore.Common.Application\obj\Debug\net6.0\OnlineBookStore.Common.Application.csproj.CoreCompileInputs.cache
+D:\OnlineBookstore\OnlineBookStore.Common.Application\obj\Debug\net6.0\OnlineBookStore.Common.Application.dll
+D:\OnlineBookstore\OnlineBookStore.Common.Application\obj\Debug\net6.0\refint\OnlineBookStore.Common.Application.dll
+D:\OnlineBookstore\OnlineBookStore.Common.Application\obj\Debug\net6.0\OnlineBookStore.Common.Application.pdb
+D:\OnlineBookstore\OnlineBookStore.Common.Application\obj\Debug\net6.0\ref\OnlineBookStore.Common.Application.dll

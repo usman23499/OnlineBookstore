@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "OnlineBookstore.Report.Core/1.0.0": {
+        "dependencies": {
+          "OnlineBookStore.Common.Core": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBookstore.Report.Core.dll": {}
+        }
+      },
+      "OnlineBookStore.Common.Core/1.0.0": {
+        "runtime": {
+          "OnlineBookStore.Common.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineBookstore.Report.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBookStore.Common.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

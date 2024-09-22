@@ -17,6 +17,7 @@
           "OnlineBookStore.User.DataAccess": "1.0.0",
           "OnlineBookstore.Book.Application": "1.0.0",
           "OnlineBookstore.Book.DataAccess": "1.0.0",
+          "OnlineBookstore.Report.Application": "1.0.0",
           "Serilog.AspNetCore": "6.1.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -741,6 +742,47 @@
           "OnlineBookstore.Book.DataAccess.dll": {}
         }
       },
+      "OnlineBookStore.Common.Core/1.0.0": {
+        "runtime": {
+          "OnlineBookStore.Common.Core.dll": {}
+        }
+      },
+      "OnlineBookStore.Common.DataAccess/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.33",
+          "OnlineBookStore.Common.Core": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBookStore.Common.DataAccess.dll": {}
+        }
+      },
+      "OnlineBookstore.Report.Application/1.0.0": {
+        "dependencies": {
+          "OnlineBookstore.Report.DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBookstore.Report.Application.dll": {}
+        }
+      },
+      "OnlineBookstore.Report.Core/1.0.0": {
+        "dependencies": {
+          "OnlineBookStore.Common.Core": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBookstore.Report.Core.dll": {}
+        }
+      },
+      "OnlineBookstore.Report.DataAccess/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.33",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
+          "OnlineBookStore.Common.DataAccess": "1.0.0",
+          "OnlineBookstore.Report.Core": "1.0.0"
+        },
+        "runtime": {
+          "OnlineBookstore.Report.DataAccess.dll": {}
+        }
+      },
       "OnlineBookStore.User.Application/1.0.0": {
         "dependencies": {
           "OnlineBookStore.User.Core": "1.0.0"
@@ -1299,6 +1341,31 @@
       "sha512": ""
     },
     "OnlineBookstore.Book.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBookStore.Common.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBookStore.Common.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBookstore.Report.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBookstore.Report.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineBookstore.Report.DataAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

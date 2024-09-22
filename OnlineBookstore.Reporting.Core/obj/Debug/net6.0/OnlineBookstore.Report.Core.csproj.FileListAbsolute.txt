@@ -1,0 +1,15 @@
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\bin\Debug\net6.0\OnlineBookstore.Report.Core.deps.json
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\bin\Debug\net6.0\OnlineBookstore.Report.Core.dll
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\bin\Debug\net6.0\OnlineBookstore.Report.Core.pdb
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\bin\Debug\net6.0\OnlineBookStore.Common.Core.dll
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\bin\Debug\net6.0\OnlineBookStore.Common.Core.pdb
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\OnlineBookstore.Report.Core.csproj.AssemblyReference.cache
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\OnlineBookstore.Report.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\OnlineBookstore.Report.Core.AssemblyInfoInputs.cache
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\OnlineBookstore.Report.Core.AssemblyInfo.cs
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\OnlineBookstore.Report.Core.csproj.CoreCompileInputs.cache
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\OnlineBookstore.Report.Core.csproj.CopyComplete
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\OnlineBookstore.Report.Core.dll
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\refint\OnlineBookstore.Report.Core.dll
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\OnlineBookstore.Report.Core.pdb
+D:\OnlineBookstore\OnlineBookstore.Reporting.Core\obj\Debug\net6.0\ref\OnlineBookstore.Report.Core.dll

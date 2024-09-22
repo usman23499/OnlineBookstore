@@ -6,6 +6,9 @@ using OnlineBook.Book.DataAccess;
 using OnlineBookstore.Book.Application;
 using OnlineBookstore.Book.Core;
 using OnlineBookstore.Book.DataAccess;
+using OnlineBookstore.Report.Application;
+using OnlineBookstore.Report.Core;
+using OnlineBookstore.Report.DataAccess;
 using OnlineBookstore.User.Application;
 using OnlineBookStore.User.Core;
 using OnlineBookStore.User.DataAccess;
@@ -66,6 +69,14 @@ builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<ITokenHandler, OnlineBookStore.User.Core.TokenHandler>();
 
+//User MicroService
+builder.Services.AddDbContext<ReportContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineBookMicroService.Report"));
+    // this connection in appsetting.json
+});
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+builder.Services.AddTransient<IReportService, ReportService>();
 
 // inject mapper
 builder.Services.AddAutoMapper(config =>
